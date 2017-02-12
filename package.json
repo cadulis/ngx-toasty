@@ -1,18 +1,18 @@
 {
-  "name": "ng2-toasty",
+  "name": "cadulis-toasty",
   "description": "Angular2 Toasty component shows growl-style alerts and messages for your web app",
-  "version": "0.0.0-semantically-released",
+  "version": "0.0.0-development",
   "scripts": {
     "test": "karma start",
     "test-watch": "tsc && karma start --no-single-run --auto-watch",
     "commit": "npm run prepublish && npm test && git-cz",
     "prepublish": "ngc && npm run build",
-    "build": "webpack && cp *.css bundles && cp -rf img bundles/img",
+    "build": "webpack && cp -rf *.css img bundles/",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/akserg/ng2-toasty.git"
+    "url": "https://github.com/cadulis/ng2-toasty.git"
   },
   "keywords": [
     "angular",
@@ -23,12 +23,12 @@
   "author": "Sergey Akopkokhyants",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/akserg/ng2-toasty/issues"
+    "url": "https://github.com/cadulis/ng2-toasty/issues"
   },
   "main": "bundles/index.umd.js",
   "module": "index.js",
   "typings": "index.d.ts",
-  "homepage": "https://github.com/akserg/ng2-toasty",
+  "homepage": "https://github.com/cadulis/ng2-toasty",
   "peerDependencies": {
     "@angular/core": "^2.4.4"
   },
@@ -63,7 +63,7 @@
     "loader-utils": "~0.2.16",
     "reflect-metadata": "0.1.8",
     "rxjs": "^5.0.3",
-    "semantic-release": "4.3.5",
+    "semantic-release": "^6.3.2",
     "source-map-loader": "0.1.5",
     "ts-helpers": "1.1.2",
     "tslint": "~4.0.0",
