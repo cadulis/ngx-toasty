@@ -14,7 +14,7 @@ import { ToastyService, ToastData, ToastyConfig } from './toasty.service';
   selector: 'ng2-toasty',
   template: `
     <div id="toasty" [ngClass]="[position]">
-        <ng2-toast *ngFor="let toast of toasts" [toast]="toast" (closeToast)="closeToast(toast)"></ng2-toast>
+        <ng2-toast *ngFor="let toast of toasts" [toast]="toast" (clickToast)="clickToast(toast)" (closeToast)="closeToast(toast)"></ng2-toast>
     </div>`
 })
 export class ToastyComponent implements OnInit {
@@ -69,7 +69,7 @@ export class ToastyComponent implements OnInit {
    * directive is instantiated.
    */
   ngOnInit(): any {
-    // We listen our service to recieve new toasts from it
+    // We listen our service to receive new toasts from it
     this.toastyService.getToasts().subscribe((toast: ToastData) => {
       // If we've gone over our limit, remove the earliest
       // one from the array
@@ -97,8 +97,19 @@ export class ToastyComponent implements OnInit {
   }
 
   /**
+   * Event listener of 'clickToast' event comes from ToastyComponent.
+   * This method executes click option callback associated with this Toast.
+   */
+  clickToast(toast: ToastData) {
+    if (toast.onClick && isFunction(toast.onClick)) {
+      this.clear(toast.id);
+      toast.onClick.apply(this, toast);
+    }
+  }
+
+  /**
    * Event listener of 'closeToast' event comes from ToastyComponent.
-   * This method removes ToastComponent assosiated with this Toast.
+   * This method removes ToastComponent associated with this Toast.
    */
   closeToast(toast: ToastData) {
     this.clear(toast.id);

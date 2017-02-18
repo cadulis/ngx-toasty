@@ -12,7 +12,7 @@ import { ToastData } from './toasty.service';
 @Component({
   selector: 'ng2-toast',
   template: `
-        <div class="toast" [ngClass]="[toast.type, toast.theme]">
+        <div class="toast" [ngClass]="[toast.type, toast.theme]" (click)="click($event)">
             <div *ngIf="toast.showClose" class="close-button" (click)="close($event)"></div>
             <div *ngIf="toast.title || toast.msg" class="toast-text">
                 <span *ngIf="toast.title" class="toast-title">{{toast.title}}</span>
@@ -24,7 +24,17 @@ import { ToastData } from './toasty.service';
 export class ToastComponent {
 
   @Input() toast: ToastData;
+  @Output('clickToast') clickToastEvent = new EventEmitter();
   @Output('closeToast') closeToastEvent = new EventEmitter();
+
+  /**
+   * Event handler invokes when user clicks on toast.
+   * This method emit new event into ToastyContainer to process click on toast.
+   */
+  click($event: any) {
+    $event.preventDefault();
+    this.clickToastEvent.next(this.toast);
+  }
 
   /**
    * Event handler invokes when user clicks on close button.

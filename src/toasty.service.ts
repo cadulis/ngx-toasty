@@ -19,6 +19,7 @@ export class ToastOptions {
   timeout?: number;
   onAdd?: Function;
   onRemove?: Function;
+  onClick?: Function;
 }
 
 /**
@@ -65,7 +66,7 @@ export function toastyServiceFactory(config: ToastyConfig): ToastyService  {
 }
 
 /**
- * Toasty service helps create different kinds of Toasts
+ * Toasty service helps to create different kinds of Toasts
  */
 @Injectable()
 export class ToastyService {
@@ -81,7 +82,7 @@ export class ToastyService {
   constructor(private config: ToastyConfig) {}
 
   /**
-   * Get list of toats
+   * Get list of toasts
    */
   getToasts(): Observable<ToastData> {
     return this.toastsEmitter.asObservable();
@@ -138,7 +139,6 @@ export class ToastyService {
     this.add(options, 'warning');
   }
 
-
   // Add a new toast item
   private add(options: ToastOptions|string|number, type: string) {
     let toastyOptions: ToastOptions;
@@ -179,7 +179,8 @@ export class ToastyService {
       type     : 'toasty-type-' + type,
       theme    : 'toasty-theme-' + theme,
       onAdd    : toastyOptions.onAdd && isFunction(toastyOptions.onAdd) ? toastyOptions.onAdd : null,
-      onRemove : toastyOptions.onRemove && isFunction(toastyOptions.onRemove) ? toastyOptions.onRemove : null
+      onRemove : toastyOptions.onRemove && isFunction(toastyOptions.onRemove) ? toastyOptions.onRemove : null,
+      onClick  : toastyOptions.onClick && isFunction(toastyOptions.onClick) ? toastyOptions.onClick : null
     };
 
     // If there's a timeout individually or globally, set the toast to timeout
