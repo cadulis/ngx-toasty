@@ -30,7 +30,7 @@
   "typings": "index.d.ts",
   "homepage": "https://github.com/cadulis/ng2-toasty",
   "peerDependencies": {
-    "@angular/core": "5"
+    "@angular/core": ">= 5.0.0"
   },
   "devDependencies": {
     "@angular/common": "5.0.0",
@@ -64,13 +64,13 @@
     "loader-utils": "~0.2.16",
     "reflect-metadata": "^0.1.8",
     "rxjs": "5.5.2",
-    "semantic-release": "^6.3.2",
+    "semantic-release": "8.2.0",
     "source-map-loader": "0.1.5",
     "ts-helpers": "1.1.2",
     "tslint": "5.8.0",
     "tslint-loader": "3.5.3",
     "typescript": "2.4.2",
-    "webpack": "2.2.0",
+    "webpack": "3.8.1",
     "zone.js": "0.8.18"
   },
   "config": {
