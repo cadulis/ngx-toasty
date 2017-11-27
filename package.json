@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/cadulis/ng2-toasty.git"
+    "url": "https://github.com/cadulis/ngx-toasty.git"
   },
   "keywords": [
     "angular",
@@ -23,12 +23,12 @@
   "author": "Sergey Akopkokhyants",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/cadulis/ng2-toasty/issues"
+    "url": "https://github.com/cadulis/ngx-toasty/issues"
   },
   "main": "bundles/index.umd.js",
   "module": "index.js",
   "typings": "index.d.ts",
-  "homepage": "https://github.com/cadulis/ng2-toasty",
+  "homepage": "https://github.com/cadulis/ngx-toasty",
   "peerDependencies": {
     "@angular/core": ">= 4.0.0"
   },

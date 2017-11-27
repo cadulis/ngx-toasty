@@ -26,7 +26,7 @@ module.exports = {
         publicPath: '/',
         filename: 'index.umd.js',
         libraryTarget: 'umd',
-        library: 'ng2-toasty'
+        library: 'ngx-toasty'
     },
 
     // require those dependencies but don't bundle them

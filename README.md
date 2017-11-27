@@ -1,12 +1,12 @@
 # Angular 2 Toasty [![npm version](https://badge.fury.io/js/ng2-toasty.svg)](https://badge.fury.io/js/ng2-toasty) [![npm monthly downloads](https://img.shields.io/npm/dm/ng2-toasty.svg?style=flat-square)](https://www.npmjs.com/package/ng2-toasty)
 Angular2 Toasty component shows growl-style alerts and messages for your application.
 
-[![Build Status](https://travis-ci.org/akserg/ng2-toasty.svg?branch=master)](https://travis-ci.org/akserg/ng2-toasty) 
+[![Build Status](https://travis-ci.org/cadulis/ngx-toasty.svg?branch=master)](https://travis-ci.org/cadulis/ngx-toasty) 
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release) 
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/) 
-[![Dependency Status](https://david-dm.org/akserg/ng2-toasty.svg)](https://david-dm.org/akserg/ng2-toasty)
-[![devDependency Status](https://david-dm.org/akserg/ng2-toasty/dev-status.svg)](https://david-dm.org/akserg/ng2-toasty#info=devDependencies)
-[![Known Vulnerabilities](https://snyk.io/test/github/akserg/ng2-toasty/badge.svg)](https://snyk.io/test/github/akserg/ng2-toasty)
+[![Dependency Status](https://david-dm.org/cadulis/ngx-toasty.svg)](https://david-dm.org/cadulis/ngx-toasty)
+[![devDependency Status](https://david-dm.org/cadulis/ngx-toasty/dev-status.svg)](https://david-dm.org/cadulis/ngx-toasty#info=devDependencies)
+[![Known Vulnerabilities](https://snyk.io/test/github/cadulis/ngx-toasty/badge.svg)](https://snyk.io/test/github/cadulis/ngx-toasty)
 
 Follow me [![twitter](https://img.shields.io/twitter/follow/akopkokhyants.svg?style=social&label=%20akopkokhyants)](https://twitter.com/akopkokhyants) to be notified about new releases.
 
