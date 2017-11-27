@@ -18,6 +18,7 @@ coverage
 *.metadata.json
 bundles
 .vscode
+*.swp
 
 #################
 ## JetBrains
