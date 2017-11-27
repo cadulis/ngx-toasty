@@ -1,6 +1,6 @@
 {
-  "name": "cadulis-toasty",
-  "description": "Angular2 Toasty component shows growl-style alerts and messages for your web app",
+  "name": "ngx-toasty",
+  "description": "Angular Toasty component shows growl-style alerts and messages for your web app",
   "version": "0.0.0-development",
   "scripts": {
     "test": "karma start",

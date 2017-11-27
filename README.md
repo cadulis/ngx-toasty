@@ -1,5 +1,5 @@
-# Angular 2 Toasty [![npm version](https://badge.fury.io/js/ng2-toasty.svg)](https://badge.fury.io/js/ng2-toasty) [![npm monthly downloads](https://img.shields.io/npm/dm/ng2-toasty.svg?style=flat-square)](https://www.npmjs.com/package/ng2-toasty)
-Angular2 Toasty component shows growl-style alerts and messages for your application.
+# Angular Toasty [![npm version](https://badge.fury.io/js/ng2-toasty.svg)](https://badge.fury.io/js/ng2-toasty) [![npm monthly downloads](https://img.shields.io/npm/dm/ng2-toasty.svg?style=flat-square)](https://www.npmjs.com/package/ng2-toasty)
+Angular Toasty component shows growl-style alerts and messages for your application.
 
 [![Build Status](https://travis-ci.org/cadulis/ngx-toasty.svg?branch=master)](https://travis-ci.org/cadulis/ngx-toasty) 
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release) 
@@ -14,7 +14,7 @@ _Some of these APIs and Components are not final and are subject to change!_
 
 ## Installation
 ```sh
-npm install ng2-toasty --save
+npm install ngx-toasty --save
 ```
 
 ## Demo
@@ -30,7 +30,7 @@ If you use SystemJS to load your files, you might have to update your config:
 ```js
 System.config({
     map: {
-        'ng2-toasty': 'node_modules/ng2-toasty/bundles/index.umd.js'
+        'ngx-toasty': 'node_modules/ngx-toasty/bundles/index.umd.js'
     }
 });
 ```
